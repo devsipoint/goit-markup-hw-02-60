@@ -8,31 +8,43 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+
+    <!--Fonts start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--fonts end-->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header section -->
     <header class="header">
-      <a class="logo" href="./index.html">WebStudio</a>
+      <a class="link header-logo-lp" href="./index.html">Web<span class="link header-logo-rp">Studio</span></a>
       <nav class="header-nav">
-        <ul class="header-list">
+        <ul class="list header-list">
           <li class="header-item">
-            <a class="header-link" href="./index.html">Студия</a>
+            <a class="link header-link header-link-current" href="./index.html">Студия</a>
           </li>
           <li class="header-item">
-            <a class="header-link" href="#">Портфолио</a>
+            <a class="link header-link" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="header-item">
-            <a class="header-link" href="#">Контакты</a>
+            <a class="link header-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-contacts-list">
+      <ul class="list header-contacts-list">
         <li class="header-contacts-item">
-          <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="link header-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
         </li>
         <li class="header-contacts-item">
-          <a class="header-email" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+          <a class="link header-phone" href="tel:+380961111111"
+            >+38 096 111 11 11</a
           >
         </li>
       </ul>
@@ -41,14 +53,14 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero-slogon">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
         <button class="hero-btn" type="button">Заказать услугу</button>
       </section>
 
       <!-- Features section (1-list) -->
       <section class="features">
-        <h2 class="features-header">Дьявол в деталях</h2>
-        <ul class="features-list">
+        <h2 hidden class="features-header">Дьявол в деталях</h2>
+        <ul class="list features-list">
           <li class="features-item">
             <h3 class="features-title">Внимание к деталям</h3>
             <p class="features-text">
@@ -82,7 +94,7 @@
       <!-- What we do section -->
       <section class="what-we-do">
         <h2 class="wwd-header">Чем мы занимаемся</h2>
-        <ul class="wwd-img-list">
+        <ul class="list wwd-img-list">
           <li class="wwd-item">
             <img
               class="wwd-img"
@@ -117,7 +129,7 @@
       <!-- Our team section (1-list) -->
       <section class="our-team">
         <h2 class="our-team-header">Наша команда</h2>
-        <ul class="team-card-list">
+        <ul class="list team-card-list">
           <li class="team-card-item">
             <img
               class="team-card-img"
@@ -151,41 +163,41 @@
             <h3 class="team-card-header">Николай Тарасов</h3>
             <p class="team-card-title">Marketing</p>
           </li>
-          <li class="team-card4-img4">
+          <li class="team-card-item">
             <img
-              class="tc4-img4"
+              class="team-card-img"
               src="./images/our-team/tc4.jpg"
               alt="Ермаков"
               width="270"
               height="260"
             />
-            <h3 class="team-card4-header">Михаил Ермаков</h3>
-            <p class="team-card4-title">UI Designer</p>
+            <h3 class="team-card-header">Михаил Ермаков</h3>
+            <p class="team-card-title">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Footer section -->
     <footer class="footer">
-      <a class="footer-logo" href="./index.html">WebStudio</a>
+      <a class="link footer-logo-lp" href="./index.html">Web<span class="link footer-logo-rp">Studio</span></a>
       <address>
-        <ul class="footer-address-list">
+        <ul class="list footer-address-list">
           <li class="footer-address-item">
             <a
-              class="geo-address"
+              class="link footer-geo-address"
               href="https://goo.gl/maps/RQotqpEW55b5SoMn7"
               target="blank"
               rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li class="footer-address-item">
-            <a class="footer-email" href="mailto:info@example.com"
+          <li class="link footer-address-item">
+            <a class="link footer-email" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li class="footer-address-item">
-            <a class="footer-phone" href="tel:+380961111111"
+          <li class="link footer-address-item">
+            <a class="link footer-phone" href="tel:+380961111111"
               >+38 096 111 11 11</a
             >
           </li>
