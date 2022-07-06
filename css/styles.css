@@ -4,23 +4,37 @@
   --main-font: "Roboto", "sans-serif";
   --secondary-font: "Raleway", "san-serif";
 
-  /* text colorrs */
+  /* text colors */
   --main-text-color-b: #212121;
   --main-text-color-w: #ffffff;
+  --main-text-color-gr: #757575;
+  --btn-text-color-w: #ffffff;
+  --btn-text-color-d: #212121;
+  --accent-text-color-bl: #2196f3;
 
   /* backgroung colors */
-  --dark-bg-color: #2f303a;
-  --grey-bg-color: #f5f4fa;
+  --main-bg-color-dk: #2f303a;
+  --main-bg-color-gr: #f5f4fa;
+  --main-bg-color-wt: #ffffff;
+  --btn-bgc-color-bl: #2196f3;
+  --btn-bgc-color-gr: #f5f4fa;
+  --accent-btn-bgc-color: #188ce8;
+ 
   /*others*/
   --brand-color-blue: #2196f3;
   --brand-color-black: #000000;
   --brand-color-white: #ffffff;
+  --border-header-color-gr: #ECECEC;
+  --border-card-color-gr: #EEEEEE;
 }
 
 body {
   font-family: var(--main-font);
-  color: var(--main-text-color);
+  color: var(--main-text-color-b);
   font-style: normal;
+  background-color: var(--main-bg-color-wt);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 /* rerset styles */
@@ -37,7 +51,19 @@ body {
   font-family: inherit;
   cursor: pointer;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* header section */
 
 .header-email,
@@ -101,7 +127,7 @@ body {
 
 /* hero section */
 .hero {
-  background-color: var(--dark-bg-color);
+  background-color: var(--main-bg-color-dk);
 }
 .hero-header {
   color: #ffffff;
@@ -116,16 +142,27 @@ body {
 .hero-btn {
   width: 200px;
   height: 50px;
-  background-color: rgba(33, 150, 243, 1);
-  color: rgba(255, 255, 255, 1);
+  color: var(--btn-text-color-w);
+  background-color: var(--btn-bgc-color-bl);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--accent-btn-bgc-color);
 }
 /* Features section */
 .features-title {
@@ -156,7 +193,7 @@ body {
 
 /* our team section */
 .our-team {
-  background-color: var(--grey-bg-color);
+  background-color: var(--main-bg-color-gr);
 }
 .our-team-header {
   font-weight: 700;
@@ -184,7 +221,7 @@ body {
 /* footer section */
 
 .footer {
-  background-color: var(--dark-bg-color);
+  background-color: var(--main-bg-color-dk);
 }
 
 .footer-logo-lp {
@@ -219,7 +256,7 @@ address {
 }
 .footer-geo-address:hover,
 .footer-geo-address:focus {
-  color: var(--brand-color-blue);
+  color: var(--accent-btn-bgc-color);
 }
 .footer-phone,
 .footer-email {
@@ -234,7 +271,7 @@ address {
 .footer-phone:focus,
 .footer-email:hover,
 .footer-email:focus {
-  color: #ffffff;
+  color: var(--accent-text-color-bl);
 }
 
 /* PORTFOLIO.html page */
@@ -243,23 +280,23 @@ address {
 /* portfolio section */
 /*buttons controls */
 .filter-btn {
-  background-color: var(--grey-bg-color);
+  background-color: var(--main-bg-color-gr);
   color: var(--main-text-color-b);
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
-  background-color: var(--brand-color-blue);
-  color: var(--brand-color-white);
+  background-color: var(--accent-btn-bgc-color);
+  color: var(--main-text-color-w);
 }
 
 .current-btn {
-  background-color: var(--brand-color-blue);
+  background-color: var(--accent-btn-bgc-color);
   color: var(--main-text-color-w);
 }
 .current-btn:hover,
 .current-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--accent-btn-bgc-color);
 }
 
 /* portfolio cards */
@@ -268,12 +305,12 @@ address {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: rgba(33, 33, 33, 1);
+  color: var(--main-text-color-b)
 }
 .pf-card-title {
-  font-weight: 400;
+  
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: rgba(117, 117, 117, 1);
+  color: var(--main-text-color-gr);
 }
